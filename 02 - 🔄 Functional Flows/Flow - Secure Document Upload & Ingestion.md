@@ -45,10 +45,21 @@ sequenceDiagram
 
 ---
 
-## 3. Key Technical Invariants
-- **Multi-Tenant Isolation**: Vectors in ChromaDB are tagged with `tenant_id` to strictly prevent cross-tenant context leakage during retrieval.
-- **Minimum Score Threshold**: Queries during RAG generation filter chunks with similarity $< 0.35$.
-- **Supported File Types**: PDF, DOCX, TXT, Markdown.
+## 3. Key Technical Invariants & Vector Sharding Architecture
+
+> [!IMPORTANT] **CTO Invariant: Multi-Tenant Vector Isolation & Sharding Roadmap**
+> To ensure strict FERPA/GDPR institutional compliance and prevent cross-institution context hallucination, vector retrieval enforces a dual-tier partitioning model:
+
+1. **Tier 1: Metadata-Filtered Shared Index (Current Base Scale)**:
+   - Vectors in ChromaDB are tagged with metadata: `{"tenant_id": "...", "creator_id": "...", "doc_id": "..."}`.
+   - All ANN (Approximate Nearest Neighbor) cosine similarity searches enforce a mandatory `$eq` filter on `tenant_id`.
+   - Cosine threshold: Chunks with similarity score $< 0.35$ are discarded to prevent irrelevant distractors.
+2. **Tier 2: Dedicated Collection Sharding (Enterprise Scale $> 10k$ Tenants)**:
+   - For high-volume enterprise university tenants, the vector store dynamically provisions an isolated collection `tenant_{tenant_id}_docs`.
+   - Eliminates index scanning contention across tenants and supports tenant-specific embedding model fine-tuning.
+3. **Data Lifecycle & Vector Purge Policy**:
+   - Deleting a `Document` entity triggers an atomic vector purge in ChromaDB (`where={"doc_id": doc_id}`) alongside S3 raw document deletion.
+
 
 ---
 
