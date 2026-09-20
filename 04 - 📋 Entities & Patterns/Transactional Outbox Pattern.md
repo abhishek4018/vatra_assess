@@ -12,7 +12,8 @@ tags:
 In microservices, writing to a database and publishing an event to a message broker (RabbitMQ) within the same user request risks dual-write inconsistencies if the broker is momentarily unavailable or network partitions occur.
 
 ## Solution Architecture
-Pariksha implements the **Transactional Outbox Pattern**:
+Vatra Assess implements the **Transactional Outbox Pattern**:
+
 
 ```mermaid
 sequenceDiagram

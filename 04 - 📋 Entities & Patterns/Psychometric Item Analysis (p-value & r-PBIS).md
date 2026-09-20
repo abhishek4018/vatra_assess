@@ -9,7 +9,8 @@ tags:
 # 📋 Psychometric Item Analysis ($p$-value & $r$-PBIS)
 
 ## Overview
-Pariksha incorporates automated psychometric analytics calculated after student exam cohorts submit their attempts, validating question quality and detecting defective distractors.
+Vatra Assess incorporates automated psychometric analytics calculated after student exam cohorts submit their attempts, validating question quality and detecting defective distractors.
+
 
 ---
 

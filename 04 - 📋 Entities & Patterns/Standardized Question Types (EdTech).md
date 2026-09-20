@@ -8,7 +8,8 @@ tags:
 
 # 📋 Standardized Question Types (EdTech)
 
-Pariksha implements 5 industry-standard question types compliant with global EdTech interoperability guidelines (QTI/IMS):
+Vatra Assess implements 5 industry-standard question types compliant with global EdTech interoperability guidelines (QTI/IMS):
+
 
 ---
 

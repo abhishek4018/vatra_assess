@@ -9,7 +9,8 @@ tags:
 # 📋 3-Tier LLM Quota Resilience Engine
 
 ## Overview
-To prevent generation outages caused by upstream Gemini API rate limits (HTTP 429) or token quota exhaustion, Pariksha implements a 4-level cascading fallback engine.
+To prevent generation outages caused by upstream Gemini API rate limits (HTTP 429) or token quota exhaustion, Vatra Assess implements a 4-level cascading fallback engine.
+
 
 ```mermaid
 flowchart TD

@@ -3,13 +3,14 @@ tags:
   - moc
   - index
   - architecture
-  - pariksha
+  - vatra-assess
 updated: 2026-09-20
 ---
 
-# 🎓 Pariksha Knowledgebase — Functional Flow & Architecture Map
+# 🎓 Vatra Assess Knowledgebase — Functional Flow & Architecture Map
 
-Welcome to the **Pariksha EdTech Platform** functional flow knowledgebase. This vault documents end-to-end user journeys, microservice interactions, standardized EdTech question models, and automated psychometric evaluation workflows.
+Welcome to the **Vatra Assess Platform** functional flow knowledgebase. This vault documents end-to-end user journeys, microservice interactions, standardized EdTech question models, and automated psychometric evaluation workflows.
+
 
 ---
 

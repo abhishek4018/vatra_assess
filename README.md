@@ -1,6 +1,7 @@
-# 🎓 Pariksha Functional Flow Knowledge Base (Obsidian Vault)
+# 🎓 Vatra Assess Functional Flow Knowledge Base (Obsidian Vault)
 
-An interconnected Obsidian knowledge base documenting the functional flows, system personas, microservice interactions, standardized EdTech question models, and automated psychometric evaluation engine for the **Pariksha EdTech Assessment Platform**.
+An interconnected Obsidian knowledge base documenting the functional flows, system personas, microservice interactions, standardized EdTech question models, and automated psychometric evaluation engine for the **Vatra Assess Platform**.
+
 
 ---
 

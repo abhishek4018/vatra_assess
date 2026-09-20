@@ -5,7 +5,7 @@
 		{"id":"node-delivery","type":"file","file":"02 - 🔄 Functional Flows/Flow - Exam Delivery & Live Assessment Player.md","x":300,"y":-200,"width":380,"height":320,"color":"3"},
 		{"id":"node-scoring","type":"file","file":"02 - 🔄 Functional Flows/Flow - Async Scoring & Psychometric Evaluation.md","x":750,"y":-200,"width":380,"height":320,"color":"4"},
 		{"id":"node-results","type":"file","file":"02 - 🔄 Functional Flows/Flow - Results Analytics & Feedback Reporting.md","x":1200,"y":-200,"width":380,"height":320,"color":"5"},
-		{"id":"node-title","type":"text","text":"# 🎓 Pariksha End-to-End Functional Lifecycle\n*From AI Prompting to Real-Time Psychometric Scoring*","x":100,"y":-380,"width":780,"height":120,"color":"6"}
+		{"id":"node-title","type":"text","text":"# 🎓 Vatra Assess End-to-End Functional Lifecycle\n*From AI Prompting to Real-Time Psychometric Scoring*","x":100,"y":-380,"width":780,"height":120,"color":"6"}
 	],
 	"edges":[
 		{"id":"edge-1","fromNode":"node-authoring","fromSide":"right","toNode":"node-review","toSide":"left","label":"AI Draft Questions"},
