@@ -1,0 +1,15 @@
+# Obsidian Vault .gitignore
+
+# Obsidian runtime cache and workspace state (personal window positions)
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+.obsidian/cache
+.obsidian/plugins/*/data.json
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Temp files
+*.tmp
+*.bak
