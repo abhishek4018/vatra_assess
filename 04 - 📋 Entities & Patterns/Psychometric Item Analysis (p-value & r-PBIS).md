@@ -47,6 +47,42 @@ Where:
 
 ---
 
+## 3. Distractor Efficiency & Non-Functioning Distractor (NFD) Analysis
+
+In multiple-choice items (`MCQ_SINGLE`), distractors must be plausible alternatives that attract candidates who have not mastered the learning objective.
+
+### Key Quality Thresholds:
+1. **Selection Frequency Criterion ($f_{\text{distractor}}$)**:
+   $$f_d = \frac{N_{\text{selected}}}{N_{\text{total}}} \times 100\%$$
+   - **Functional Distractor**: Selected by $\ge 5\%$ of candidates.
+   - **Non-Functioning Distractor (NFD)**: Selected by $< 5\%$ of candidates (too implausible or obvious). Items with 0 or 1 functional distractors are flagged for author revision.
+
+2. **Distractor Discrimination ($r_{\text{distractor}}$)**:
+   - Measures point-biserial correlation for each incorrect option.
+   - **Standard**: $r_d$ **MUST be negative**. 
+   - **Warning Flag**: If $r_d > 0$, top-performing candidates are choosing this incorrect option more often than bottom candidates, signaling a misleading or ambiguous distractor.
+
+---
+
+## 4. Item Health Summary Matrix
+
+```mermaid
+graph TD
+    Item["Test Item Analyzed"] --> P{"p-value (Difficulty)"}
+    P -->|0.30 - 0.80| Disc{"r-PBIS (Discrimination)"}
+    P -->|< 0.30 or > 0.85| FlagP["Flag: Extreme Difficulty"]
+    
+    Disc -->|≥ 0.30| Dist{"Distractors (NFD & rd)"}
+    Disc -->|< 0.15| FlagD["Flag: Poor Discrimination"]
+    
+    Dist -->|All fd ≥ 5% & rd < 0| Green["🟢 Calibrated Question"]
+    Dist -->|fd < 5% or rd > 0| FlagDist["🟡 Revise Distractors"]
+```
+
+---
+
 ## Related Notes
 - Evaluated In: [[Flow - Async Scoring & Psychometric Evaluation]]
 - Displayed In: [[Flow - Results Analytics & Feedback Reporting]]
+- Advanced Adaptive Modeling: [[Item Response Theory & Adaptive Testing (CAT)]]
+

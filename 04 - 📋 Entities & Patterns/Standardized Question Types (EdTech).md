@@ -51,7 +51,28 @@ Vatra Assess implements 5 industry-standard question types compliant with global
 
 ---
 
+## 6. Bloom's Taxonomy Cognitive Mapping
+
+| Question Type | Primary Cognitive Level | Pedagogical Purpose & Target Outcome |
+| :--- | :--- | :--- |
+| **`MCQ_SINGLE`** | **Remember / Understand** | Concept recognition, definitions, and rule recall. |
+| **`MCQ_MULTIPLE`** | **Understand / Analyze** | Multi-factor classification, distinguishing true conditions from distractors. |
+| **`INLINE_CHOICE`** | **Apply / Analyze** | Contextual sentence completion, grammatical/logical flow, code snippet synthesis. |
+| **`TEXT_ENTRY`** | **Recall / Apply** | Unprompted terminology production (eliminating recognition bias). |
+| **`NUMERIC_ENTRY`** | **Apply / Evaluate** | Mathematical calculation, quantitative problem solving, scientific precision. |
+
+---
+
+## 7. QTI 3.0 Interoperability Invariants
+- **Interchangeable Item Bodies**: The `stem` with `__________` tokens maps 1:1 to QTI `<textEntryInteraction>` and `<inlineChoiceInteraction>` elements.
+- **Float Rounding Tolerances**: `NUMERIC_ENTRY` supports absolute ($\pm \epsilon$) and percentage tolerances during automated worker grading.
+
+---
+
 ## Related Notes
 - [[Flow - AI Assessment Generation (RAG & Gemini)]]
 - [[Flow - Manual Assessment Authoring & Refinement]]
 - [[Flow - Exam Delivery & Live Assessment Player]]
+- [[Psychometric Item Analysis (p-value & r-PBIS)]]
+- [[Item Response Theory & Adaptive Testing (CAT)]]
+

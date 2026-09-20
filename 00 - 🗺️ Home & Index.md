@@ -91,7 +91,9 @@ flowchart TD
 - [[Standardized Question Types (EdTech)]] (MCQ_SINGLE, MCQ_MULTIPLE, TEXT_ENTRY, INLINE_CHOICE, NUMERIC_ENTRY)
 - [[Transactional Outbox Pattern]]
 - [[Psychometric Item Analysis (p-value & r-PBIS)]]
+- [[Item Response Theory & Adaptive Testing (CAT)]]
 - [[3-Tier LLM Quota Engine]]
+
 
 ---
 
